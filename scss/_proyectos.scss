@@ -1,0 +1,88 @@
+.titulo-proy{
+    padding: 80px 80px 80px 80px;
+    font-family: $fuente-principal;
+    font-weight: 300;
+    color: $font-color;
+
+}
+
+.text-muted{
+    color: rgba(237, 242, 251, 0.9019607843);
+}
+.container-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+@media (min-width: 768px) {
+    .container-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+}
+
+@media (min-width: 992px) {
+    .container-cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+.card {
+    max-width: 100%;
+}
+
+.card-img-top {
+    height: 300px;
+}
+
+
+.casas h3{
+    font-family: 'Montserrat',sans-serif;
+    color: $font-color;
+
+    iframe{
+        display: flex;
+        padding-top: 20px;
+        margin-left: 40px;
+    
+    }
+}
+
+.edificios{
+    margin-top: 10px;
+
+    h3{
+        font-family: 'Montserrat',sans-serif;
+        font-weight: 400;
+        color: $font-color;
+        margin-top: 30px;
+        margin-bottom: 10px;
+        margin-left: 30px;
+
+        iframe{
+            display: flex;
+            padding-top: 20px;
+            margin-left: 40px;
+        
+        }
+    }
+}
+
+
+.oficinas{
+    margin-top: 10px; 
+    margin-bottom: 70px;
+
+    h3{
+        font-family: 'Montserrat',sans-serif;
+        font-weight: 400;
+        color: $font-color;
+        margin-top: 30px;
+        margin-bottom: 10px;
+        margin-left: 30px;
+    }
+
+}
