@@ -22,8 +22,9 @@ header img {
   height: 70px;
   width: 250px;
 }
-header img a {
-  font-family: "ablation";
+
+header a {
+  font-family: "Ablation", sans-serif;
   font-weight: bold;
   text-decoration: none;
   color: #edf2fb;
@@ -74,6 +75,7 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: 5px;
   align-items: center;
   color: #edf2fb;
 }
@@ -170,6 +172,7 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: 5px;
   align-items: start;
 }
 .banner h1 {
@@ -221,7 +224,8 @@ img {
   font-weight: 500;
   margin-bottom: 30px;
 }
-.index-pag h3 img {
+
+.index-pag img {
   width: 400px;
   height: 300px;
 }
@@ -266,9 +270,9 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: 5px;
   align-items: center;
 }
-
 .banner-nos h2 {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
@@ -408,8 +412,8 @@ img {
   color: #edf2fb;
 }
 
-.text-muted {
-  color: rgba(237, 242, 251, 0.9019607843);
+small {
+  color: rgba(237, 242, 251, 0.689) !important;
 }
 
 .container-cards {
@@ -434,6 +438,7 @@ img {
 }
 .card {
   max-width: 100%;
+  z-index: -1;
 }
 
 .card-img-top {
@@ -442,9 +447,14 @@ img {
 
 .casas h3 {
   font-family: "Montserrat", sans-serif;
+  font-weight: 400;
   color: #edf2fb;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  margin-left: 30px;
 }
-.casas h3 iframe {
+
+.casas iframe {
   display: flex;
   padding-top: 20px;
   margin-left: 40px;
@@ -461,7 +471,8 @@ img {
   margin-bottom: 10px;
   margin-left: 30px;
 }
-.edificios h3 iframe {
+
+.edificios iframe {
   display: flex;
   padding-top: 20px;
   margin-left: 40px;
@@ -496,41 +507,65 @@ img {
   flex-direction: column;
   align-items: start;
   padding-left: 30px;
+}
+.servicios p {
   font-family: "Montserrat", sans-serif;
   font-weight: 300px;
   color: #edf2fb;
 }
 
-.lista-serv {
-  background-image: url(../img/plano6.jpg);
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: 50% 70%;
-  background-position-y: center;
-  margin-right: 30px;
-  padding-top: 50px;
+#lista-servicios {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  justify-items: center;
+  padding: 70px;
+  background-color: #001a2c;
 }
-.lista-serv ul {
-  margin-left: 100px;
-  margin-bottom: 40px;
-}
-.lista-serv ul li {
+#lista-servicios h4 {
   color: #edf2fb;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 200;
-  list-style: none;
-  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 300;
+  justify-content: center;
+}
+#lista-servicios i {
+  color: #edf2fb;
+  font-size: 2.5rem;
+  justify-content: center;
+  align-items: center;
+}
+#lista-servicios p {
+  color: rgba(148, 180, 228, 0.9882352941);
+  font-size: 16px;
+  text-align: justify;
+}
+
+@media (max-width: 768px) {
+  #lista-servicios {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    justify-items: center;
+  }
+}
+@media (max-width: 520px) {
+  #lista-servicios {
+    grid-template-columns: 1;
+    gap: 10px;
+    justify-items: center;
+  }
+}
+.cajas-serv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
 }
 
 .proceso {
   padding-top: 50px;
   margin-bottom: 70px;
   margin-right: 30px;
-  background-image: url(../img/contruccion11.jpg);
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: 50% 90%;
-  background-position-y: center;
 }
 .proceso h2 {
   font-family: "Montserrat", sans-serif;
@@ -540,16 +575,62 @@ img {
   margin-left: 30px;
   margin-bottom: 50px;
 }
-.proceso h2 ol {
-  margin-left: 100px;
-}
-.proceso h2 ol li {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 200;
-  color: #edf2fb;
-  margin-bottom: 20px;
+
+#carouselWithCaptions {
+  margin: 0 auto;
+  height: 500px;
+  width: 800px;
+  z-index: -1;
 }
 
+@media (max-width: 991px) {
+  #carouselWithCaptions {
+    height: 450px;
+    width: 650px;
+  }
+}
+@media (max-width: 768px) {
+  #carouselWithCaptions {
+    height: 350px;
+    width: 550px;
+  }
+}
+@media (max-width: 520px) {
+  #carouselWithCaptions {
+    height: 350px;
+    width: 450px;
+  }
+}
+.carousel-caption {
+  background-color: rgba(240, 242, 244, 0.53);
+}
+.carousel-caption h5, .carousel-caption p {
+  color: #001a2c;
+}
+
+.carousel-inner img {
+  height: 500px;
+  width: 800px;
+}
+
+@media (max-width: 991px) {
+  .carousel-inner {
+    height: 450px;
+    width: 650px;
+  }
+}
+@media (max-width: 768px) {
+  .carousel-inner {
+    height: 300px;
+    width: 450px;
+  }
+}
+@media (max-width: 520px) {
+  .carousel-inner {
+    height: 250px;
+    width: 350px;
+  }
+}
 .titulo-cont {
   padding: 80px 80px 80px 80px;
   font-family: "Montserrat", sans-serif;

@@ -4,7 +4,16 @@ $bg-body2: #001a2c;
 $header-color: #001523;
 $footer-color: #002137;
 $font-color: #edf2fb;
+$font-color2: #94b4e4fc;
 
 //FUENTE
 $fuente-principal: "Montserrat", sans-serif;
 $titulo-fuente: "Montserrat", sans-serif 300;
+
+//MIXIN
+@mixin flex-column-center {
+	display:flex;
+	flex-direction: column;
+	justify-content:center;
+    gap: 5px;
+}
