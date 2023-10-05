@@ -11,10 +11,8 @@ small{
 
 }
 .container-cards {
-    display: flex;
-    flex-direction: column;
+   @include flex-column-center;
     align-items: center;
-    justify-content: center;
     gap: 20px;
 }
 
