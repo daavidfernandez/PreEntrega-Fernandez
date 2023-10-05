@@ -75,7 +75,6 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 5px;
   align-items: center;
   color: #edf2fb;
 }
@@ -172,7 +171,6 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 5px;
   align-items: start;
 }
 .banner h1 {
@@ -196,6 +194,10 @@ img {
   display: flex;
   flex-direction: column;
   gap: 30px;
+}
+
+.fade-right {
+  z-index: -1;
 }
 
 @media (max-width: 768px) {
@@ -270,7 +272,6 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 5px;
   align-items: center;
 }
 .banner-nos h2 {
@@ -419,8 +420,8 @@ small {
 .container-cards {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   gap: 20px;
 }
 
@@ -439,6 +440,17 @@ small {
 .card {
   max-width: 100%;
   z-index: -1;
+  background-color: #001a2c;
+}
+.card p {
+  color: rgba(148, 180, 228, 0.9882352941);
+}
+
+.card {
+  transition: all 0.8s;
+}
+.card:hover {
+  transform: scale(1.2, 1.2);
 }
 
 .card-img-top {
@@ -565,7 +577,6 @@ small {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 5px;
 }
 
 .proceso {

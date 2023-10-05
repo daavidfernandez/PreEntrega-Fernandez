@@ -32,12 +32,25 @@ small{
 .card {
     max-width: 100%;
     z-index: -1;
+    background-color: $bg-body2;
+    p{
+        color: $font-color2;
+    }
 }
+
+.card {
+    transition: all 0.8s;
+
+    &:hover {
+            transform: scale(1.2,1.2);
+        }
+  }
+        
+
 
 .card-img-top {
     height: 300px;
 }
-
 
 .casas{
     h3{

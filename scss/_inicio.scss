@@ -203,6 +203,12 @@ img{
     flex-direction: column;
     gap: 30px;
 }
+.fade-right{
+    z-index: -1;
+}
+    
+
+
 @media (max-width:768px){
     .padre-index{
         display: grid;
